@@ -35,6 +35,6 @@ The location of the different files is as follows:
 - `PrepWarpseg_forinference.py`: After copying the preprocessed WarpSeg folder from the pmacs cluster to the lambda machine, this script prepares the input data into the format required for running nnU-Net inference. The organized data is stored in ../7T_forinference. 
 - `run_training.sh`: Executes patch-based nnU-Net training. I have trained the baseline model in a 4-fold cross validation setting. The results are stored in /data/sadhanar/nnUNet_trained_models/.../Task700..
 - `run_inference_warpSeg.sh`: Script for running inference on the whole brain MRI images stored in 7T_forinfernece. I have run baseline model inference on these images. The results are stored in /data/sadhanar/baseline_predictions. 
-- `Task701_7T_ManualSeg_Laplacian.py': Given the 'manual patches' folder from Box with the edited segmentations, this script prepares the input data for nnU-Net training. It generates the Laplacian solution corresponding to the ground truth segmentation as this is required for training. Note that these images are input into the network as a second 'channel (modality)' and not as a label image. 
+- `Task701_7T_ManualSeg_Laplacian.py`: Given the 'manual patches' folder from Box with the edited segmentations, this script prepares the input data for nnU-Net training. It generates the Laplacian solution corresponding to the ground truth segmentation as this is required for training. Note that these images are input into the network as a second 'channel (modality)' and not as a label image. 
 
 
